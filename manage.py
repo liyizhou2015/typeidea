@@ -5,6 +5,7 @@ import sys
 if __name__ == "__main__":
     # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "typeidea.settings")
     profile = os.environ.get('TYPEIDEA_SETTING', 'develope')
+    # print("profile: ", profile)
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "typeidea.settings.%s" % profile)
     
     try:
